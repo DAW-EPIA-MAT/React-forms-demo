@@ -1,8 +1,10 @@
-# React + Vite
+<div style="text-align: center">
+   <img src="./assets/images/React-icon.svg" alt="DOM Tree" width="100" />
+</div>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# React :: state management :: useState
 
-Currently, two official plugins are available:
+State management demo for React components
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Source
+* official doc: https://react.dev/reference/react/useState#usestate
