@@ -11,6 +11,12 @@ State management and forms demo for React components:
 - controlled form
 - conditional render
 
+## Deploy
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3301f03e-c0c3-4afe-9b85-acabed0d5014/deploy-status)](https://app.netlify.com/sites/react-notes-form/deploys)
+
+- [https://main--react-notes-form.netlify.app/ [ ↗ ] ](https://main--react-notes-form.netlify.app/)
+
 ## Source
 
 - official doc: [https://react.dev/reference/react/useState#usestate [ ↗ ] ](https://react.dev/reference/react/useState#usestate)
