@@ -4,7 +4,13 @@
 
 # React :: state management :: useState
 
-State management demo for React components
+State management and forms demo for React components:
+
+- useState
+- custom hooks
+- controlled form
+- conditional render
 
 ## Source
-* official doc: [https://react.dev/reference/react/useState#usestate [ ↗ ] ](https://react.dev/reference/react/useState#usestate)
+
+- official doc: [https://react.dev/reference/react/useState#usestate [ ↗ ] ](https://react.dev/reference/react/useState#usestate)
