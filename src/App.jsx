@@ -1,22 +1,31 @@
-import { useState } from "react";
+import { Form, MainHeader, NotesList, ToggleButton } from "./components";
+import { notes as originalNotes } from "./data/notes";
+import { useNote, useNotes, useShowAll } from "./hooks";
 
 const App = () => {
-  const [persons, setPersons] = useState([{ name: "Arto Hellas" }]);
-  const [newName, setNewName] = useState("");
+  const { showAll, handleToggleImportant } = useShowAll();
+  const { notes, handleUpdateNotes } = useNotes(originalNotes, showAll);
+  const { note, handleUpdateNote } = useNote("");
 
   return (
-    <div>
-      <h2>Phonebook</h2>
-      <form>
-        <div>
-          name: <input />
+    <div className="wrapper">
+      <MainHeader text="Notes" />
+      <div className="main">
+        <div className="section main__container">
+          <ToggleButton
+            handleToggleImportant={handleToggleImportant}
+            showAll={showAll}
+          />
+          <NotesList notes={notes} />
         </div>
-        <div>
-          <button type="submit">add</button>
+        <div className="main__container">
+          <Form
+            handleUpdateNote={handleUpdateNote}
+            handleUpdateNotes={handleUpdateNotes}
+            note={note}
+          />
         </div>
-      </form>
-      <h2>Numbers</h2>
-      ...
+      </div>
     </div>
   );
 };
